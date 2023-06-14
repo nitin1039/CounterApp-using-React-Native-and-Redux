@@ -5,14 +5,7 @@ const initialState = {
     numbers: [],
   };
   
-  const counterReducer = (state = initialState.counter, action) => {
-    switch (action.type) {
-      case 'INCREMENT':
-        return state + 1;
-      default:
-        return state;
-    }
-  };
+
   
   
   const numberReducer = (state = initialState.numbers, action) => {
@@ -28,6 +21,6 @@ const initialState = {
   
   
   export default combineReducers({
-    counter: counterReducer,
+ 
     numbers: numberReducer,
   });
